@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set_wallpaper ~/Wallpapers/.wallpaper &
+xcompmgr &
+st &
+unclutter &
