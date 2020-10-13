@@ -4,3 +4,4 @@ set_wallpaper ~/Wallpapers/.wallpaper &
 xcompmgr &
 st &
 unclutter &
+dwmstatus 2>&1 >/dev/null &
