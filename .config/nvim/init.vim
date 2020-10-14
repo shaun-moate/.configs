@@ -1,4 +1,7 @@
-let mapleader=","
+__   _(_)_ __ ___  _ __ ___
+\ \ / | | '_ ` _ \| '__/ __|
+ \ V /| | | | | | | | | (__
+  \_/ |_|_| |_| |_|_|  \___|
 
 " Plugins - Vim-Plug {{{
 if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autoload/plug.vim"'))
@@ -12,6 +15,9 @@ Plug 'vimwiki/vimwiki'
 call plug#end()
 " }}}
 
+" Built-in Options {{{
+let mapleader=","
+
 set nobackup
 set noswapfile
 
@@ -23,13 +29,19 @@ set title
 set ruler
 set number
 set relativenumber
+set foldmethod=marker
 
 set tabstop=4
 set softtabstop=0
 set shiftwidth=4
+" }}}
 
+" Key Remapping {{{
 nnoremap <C-c> "+y
 map <C-v> "+p
+" }}}
 
+" VimWiki Settings {{{
 let g:vimwiki_list = [{'path': '~/VimWiki', 'syntax': 'markdown', 'ext': '.md'}]
+" }}}
 
